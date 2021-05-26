@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Combinging Selectors</title>
+    <style type="text/css">
+    	h1{
+    		text-align: center;
+    		color: blue;
+    		
+    	}
+    	p.big{
+    		font-size: 30px;
+    	}
+    	div, .small{
+    		font-size: 10px;
+    	}
+    	div.medium{
+    		font-size: 20px;
+    	}
+    	article {
+    		color: blue;
+    		font-size: 30px;
+    	}
+    	article > span {
+    		color: red;
+    	}
+    	article p {
+    		color: green;
+    		background-color: yellow;
+    	}
+    	ul > li {
+    		color: red;
+            background-color: grey;
+    	}
+    </style>
+</head>
+<body>
+	<h1>Combining Selectors</h1>
+	<p class="big">This form of class selectors, in which note that there is no space between p and .big, can only enable the contents enclosed by p to be rectified.</p>
+	<h2>We can view the comparison of forms with comma and without space or any right here:</h2>
+	<div class="small">1.Earth Day is now coordinated globally by the <span class="medium">Earth Day Network</span>, and is celebrated in more than 175 countries every year. Numerous communities celebrate Earth Week, an entire week of activities focused on environmental issues. In 2009, the United Nations designated April 22 International Mother Earth Day.</div>
+	<div class="medium">2.Earth Day is now coordinated globally by the <span class="small">Earth Day Network</span>, and is celebrated in more than 175 countries every year. Numerous communities celebrate Earth Week, an entire week of activities focused on environmental issues. In 2009, the United Nations designated April 22 International Mother Earth Day.</div>
+    <h3>In the first instance, since the class "medium" is specified to div, it is invalid when applied to span. However, in the second instance, although we seem to specify class "small" to div, it still is available for span.</h3>
+    <h2>We have another method to specify the contents "double enclosed":</h2>
+    <article>Earth Day is now coordinated globally by the <span>Earth Day Network</span>, and is celebrated in more than 175 countries every year. Numerous communities celebrate Earth Week, an entire week of activities focused on environmental issues. In 2009, the United Nations designated April 22 International Mother Earth Day.</article>
+    <h3>its usage can be "semantic tag 1" &gt; "semantic tag 2", which means ST2 is a direct child of ST1.</h3>
+    <article>Earth Day is now coordinated globally <div>by the <p>Earth Day Network</p></div>, and is celebrated in more than 175 countries every year. Numerous communities celebrate Earth Week, an entire week of activities focused on environmental issues. In 2009, the United Nations designated April 22 International Mother Earth Day.</article>
+    <article>When we have no notation between "ST1" and "ST2", it defaults that when ST2 is in the contents enclosed by S1, regardless of whether there are many STs out of ST2 but in the ST1, ST2 will conform to the style.</article>
+    <article>What if we want to edit all of the elements in the list? let's check it out.</article>
+    <section>
+    	Table of contents:
+    	<ul>
+    		<li>Article 1</li>
+    		<li>Article 2
+    			<ol>
+    				<li>sub</li>
+    				<li>sub</li>
+    		    </ol>
+    		</li>
+    		<li>Article 3</li>
+    	</ul>
+    </section>
+</body>
+</html>
