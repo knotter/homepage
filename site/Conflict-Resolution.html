@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conflict Resolution</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<style type="text/css">
+		p{
+			color: purple;
+			color: blue;
+			width: 330px
+
+		}
+		p:hover,p:active {
+            color: purple;
+            background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<h1>Since we learn decoration, We should know the rules that when these decoration conflicts, which decoration will be applied.</h1>
+	<h2>At first, we look at Origin Precedence.</h2>
+	<p style="color: white; width: 250px">Which color I am IN?</p>
+	<article style="color: white;">The Origin Precedence observes the rule that when the decoration conflicts, the LAST decoration will be applied.</article>
+	<h2>Next, the merge rule.</h2>
+    <p style="background: green">Do I have Multiple decorations?</p>
+    <h3>Moreover, the inheritance rule is much interesting:</h3>
+    <p>Do we appear?</p>
+
+</body>
+</html>

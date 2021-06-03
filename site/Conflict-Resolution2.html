@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Conflict Resolution</title>
+	<style type="text/css">
+		body{
+			background: black;
+		}
+		h1{
+            color: white;
+            font-family: Time New Roman;
+            font-weight: bold;
+            text-align: center;
+            width: 500px;
+		}
+		h1:hover, h1:active {
+			color: blue;
+			background-color: purple;
+			border: 1px solid green;
+			display: block;
+		}
+		header, article, div, span, p{
+			font-family: Time New Roman;
+			color: white;
+		}
+		article.big{
+			font-size: 30px
+		}
+		.backgroundcolor p{
+			background: white;
+		}
+		p.bb {
+			background: green;
+		}
+	</style>
+
+</head>
+<body>
+	<h1>Conflict Resolution</h1>
+	<header>More one rule: the most specific style will be applied.</header>
+	<div style="color: yellow;">EXAMPLE: Am I White or Yellow?</div>
+    <article id="big" style="font-size: 10px"> EXAMPLE: Am I big or small?</article>
+    <div class="backgroundcolor" style="background: yellow; color: blue; width: 600px">Do I have a Yellow background or White background?
+    	<p  class="bb"> Which color is my background?</p></div>
+    
+
+</body>
+</html>

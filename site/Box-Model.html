@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Box model</title>
+	<style type="text/css">
+     /* *{
+	       border-sizing: border-box;
+        }*/
+		body{
+			margin: 0;
+			padding: 0;
+			background: black;
+		}
+		#box1 {
+			color: white;
+			background: blue;
+			padding: 5px 5px 5px 5px;
+			text-align:center;
+			width: 200px;
+			margin:auto;
+			border: 5px solid yellow;
+			margin-bottom: 30px;
+		}
+		#box2 {
+			color: white;
+			background: blue;
+			padding: 5px 5px 5px 5px;
+			text-align:center;
+			width: 200px;
+			margin:auto;
+			border: 5px solid yellow;
+			box-sizing: border-box;
+		}
+		#content {
+			background: yellow;
+			font-family: Times New Roman;
+			font-size: 24px;
+
+		}
+		#box1:hover, #box1:active,#box2:hover,#box2:active {
+			background: pink;
+			color: purple;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="box1"><h1>Box Model</h1></div>
+    <div id="box2"><h1>Box Model</h1></div>
+    <p id="content">Hints for Padding: We need 4 numbers representing width and heights to adjust the size of the padding(box). Its sequencial order symbolize the real box size data in clockwise order.
+    E.G: the first 5 represents the upper height. Subsequently, the next 5 represents the right width.</p>
+    <p id="content">Hints for box-sizing: it does not conform to the inheritance rule, which means it cannot apply to its child tag. However, we can have a star selector to amend this problem.</p>
+    <p id="content">The rule for margin: 
+     When there are two elements adjacent with each other, the distance between them will be the sum of their margin. Instead, when paralleling, the distance between them will be the longer margin.  </p>
+
+
+</body>
+</html>
